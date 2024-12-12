@@ -128,6 +128,13 @@
     </footer>
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Function to scroll to the Featured Mixtapes section
+        function scrollToFeatured() {
+            document.getElementById('featured-content').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     </script>
 </body>
 </html>
