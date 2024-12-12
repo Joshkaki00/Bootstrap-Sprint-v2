@@ -182,9 +182,14 @@ footer {
     z-index: 1; /* Ensure hero content is above the waveform */
 }
 
-
 .waveform-svg path {
     fill-opacity: 0.05; /* Subtle waveform visibility */
+}
+
+/* Form Container */
+.form-container {
+    max-width: 500px; /* Restricts the form width */
+    margin: 0 auto;   /* Centers the form */
 }
 
 /* Featured Section Titles */
