@@ -1,44 +1,133 @@
+/* General Styling */
+body {
+    background: linear-gradient(to bottom, #1a1a1a, #000); /* Dark gradient background */
+    color: #ffffff; /* White text */
+    font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
 header {
-    background-color: #007bff; /* Bootstrap primary color */
+    background: transparent; /* Allow the gradient to show */
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    letter-spacing: 2px;
+}
+
+header h3 {
+    font-size: 1.5rem;
+    color: #f1f1f1;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #000; /* Dark background */
+    border-bottom: 1px solid #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
     color: #fff;
-    padding: 20px;
-    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.container {
-    width: 80%;
-    margin: 20px auto;
+.nav-link {
+    color: #aaa;
+    transition: color 0.3s ease;
 }
 
-.mixtape {
-    background-color: #fff;
-    padding: 20px;
+.nav-link:hover {
+    color: #f39c12; /* Bright accent color */
+}
+
+/* Main Container */
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
 }
 
-.mixtape h2 {
-    margin-top: 0;
+/* Card Styling */
+.card {
+    background: #1c1c1c; /* Dark background for cards */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.mixtape audio {
-    width: 100%;
-    margin-top: 10px;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.2);
+}
+
+.card-img-top {
+    border-radius: 10px 10px 0 0;
 }
 
 .card-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #fff;
 }
 
 .card-text {
-    font-size: 1rem;
-    color: #6c757d; /* Bootstrap secondary text color */
+    font-size: 1.2rem;
+    color: #ccc;
 }
 
-footer {
-    background-color: #343a40; /* Bootstrap dark color */
+/* Buttons */
+button, .btn {
+    background: linear-gradient(to right, #f39c12, #e74c3c);
+    border: none;
     color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #e67e22, #c0392b);
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
     padding: 20px;
     text-align: center;
+    color: #aaa;
 }
+
+/* Waveform Visualization */
+.waveform-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    z-index: 1;
+    overflow: hidden;
+}
+
+.waveform-svg svg {
+    width: 100%;
+    height: 100%;
+}
+
